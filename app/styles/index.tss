@@ -1,0 +1,90 @@
+//
+"ListView":{
+  top: 0
+  , bottom: 0
+  , separatorColor: 'transparent'
+  , separatorHeight: 0
+  , backgroundColor: '#eee'
+}
+
+/*
+*/
+".listItem":{
+  height: 140
+  , backgroundColor: 'transparent'
+  , backgroundSelectedColor: '#731ab0'
+}
+
+/*
+*/
+".listDelete":{
+  canEdit: true
+}
+
+/*
+*/
+"#imgList":{
+  width: Ti.UI.FILL
+  , height: Ti.UI.FILL
+  , top: 0
+  , left: 0
+}
+"#imgList[platform=ios]":{
+  defaultImage: 'transparent'
+}
+
+/*
+*/
+"#rectList":{
+  backgroundColor: '#000'
+  , opacity: 0.4
+}
+
+/*
+*/
+"#defaultLogoList":{
+  width: '30%'
+  , image: '/images/defaultImage.png'
+}
+
+/*
+*/
+"#titleList":{
+  color: '#fff'
+  , font: { fontSize: 16 }
+  , left: '5%'
+  , right: '5%'
+  , bottom: '45%'
+  , textAlign: 'left'
+}
+
+/*
+*/
+"#titulo_vazio":{
+  color: '#731ab0'
+  , font: { fontSize: 16 }
+  , left: '5%'
+  , right: '5%'
+  , textAlign: 'center'
+}
+
+/*
+*/
+"#enderecoList":{
+  color: '#fff'
+  , font: { fontSize: 14 }
+  , left: '5%'
+  , right: '5%'
+  , bottom: '20%'
+  , textAlign: 'left'
+}
+
+/*
+*/
+"#gpsList":{
+  color: '#fff'
+  , font: { fontSize: 12 }
+  , right: '5%'
+  , bottom: '5%'
+  , textAlign: 'right'
+}

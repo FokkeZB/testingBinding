@@ -1,0 +1,18 @@
+{
+	"global": {
+		"url": "https://www.barantes.com.br/easy/administrador/arquivos_mobile/"
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {
+		"nl.fokkezb.loading": "1.8.3",
+    "nl.fokkezb.pullToRefresh": "2.1.1",
+    "nl.fokkezb.infiniteScroll": "1.4.4"
+	}
+}

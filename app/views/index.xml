@@ -1,0 +1,42 @@
+<Alloy>
+	<Collection src='eventos' instance='true' id='eventosCollection'/>
+	<Window class="container" onOpen='openWin'>
+		<!-- Pull To Refresh -->
+		<Widget id="refresh" src="nl.fokkezb.pullToRefresh" onRelease="reloadFunc">
+
+			<ListView id="list" defaultItemTemplate="template_eventos">
+				<!-- Infinity Scroll -->
+				<Widget id="infinity" src="nl.fokkezb.infiniteScroll" onEnd="loadMore" />
+
+				<Templates>
+					<!-- Define your item within the Templates tags or use the Require tag to include a view that only contains an ItemTemplate -->
+					<ItemTemplate name="template_eventos">
+						<ImageView id='defaultLogoList'/>
+						<ImageView bindId="img" id="imgList"/>
+						<View id='rectList'/>
+						<Label bindId="titulo" id="titleList" class="classFont-Bold"/>
+						<Label bindId="endereco" id="enderecoList" class="classFont-Regular" />
+						<Label bindId="gps" id="gpsList" class="classFont-Regular" />
+					</ItemTemplate>
+
+					<ItemTemplate name="template_vazio">
+						<Label bindId="titulo" id="titulo_vazio" class="classFont-Bold" />
+					</ItemTemplate>
+				</Templates>
+
+				<ListSection dataCollection="$.eventosCollection" id='eventosSection'>
+					<!--  -->
+					<ListItem
+						class='listItem'
+						titulo:text="{nome}"
+						template="{template}"
+						endereco:text="{endereco}"
+						img:image="{flyer}"
+						gps:text="{gps}"
+					/>
+				</ListSection>
+			</ListView>
+		</Widget>
+
+	</Window>
+</Alloy>
