@@ -18,6 +18,11 @@ exports.definition = {
 				console.log('- - - - - - - -');
 				console.log('model: ', JSON.stringify(this));
 				console.log('- - - - - - - -');
+
+				var t = this.toJSON();
+				t.nome = t.nomeVazio;
+
+				return t;
 			}
 		});
 
